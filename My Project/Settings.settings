@@ -1,0 +1,96 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="REQUISICION_SERVICIO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REQUISICION_SOLICITA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REQUISICION_REVISA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REQUISICION_AUTORIZA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Medico Jefe</Value>
+    </Setting>
+    <Setting Name="REQUISICION_DESPACHA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REQUISICION_RECIBE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="REQUISICION_SOLICITA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Jefe Del Servicio</Value>
+    </Setting>
+    <Setting Name="REQUISICION_REVISA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Guarda Almacen</Value>
+    </Setting>
+    <Setting Name="REQUISICION_AUTORIZA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Gerente</Value>
+    </Setting>
+    <Setting Name="REQUISICION_DESPACHA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Guarda Almacen</Value>
+    </Setting>
+    <Setting Name="REQUISICION_RECIBE_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Jefe Del Servicio</Value>
+    </Setting>
+    <Setting Name="REQUISICION_JUSTIFICACION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Material medico quirurgico para uso diario del servicio</Value>
+    </Setting>
+    <Setting Name="PEDIDO_SERVICIO" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PEDIDO_JUSTIFICACION" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PEDIDO_SOLICITA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PEDIDO_AUTORIZA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Eduardo García</Value>
+    </Setting>
+    <Setting Name="PEDIDO_APROBACION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dr.  Jazmy Alejandra García Figueroa</Value>
+    </Setting>
+    <Setting Name="PEDIDO_SOLICITA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Jefe Del Servicio</Value>
+    </Setting>
+    <Setting Name="PEDIDO_AUTORIZA_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Gerente Administrativo Financiero </Value>
+    </Setting>
+    <Setting Name="PEDIDO_APROBACION_CARGO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Directora Ejecutiva</Value>
+    </Setting>
+    <Setting Name="PEDIDO_PRESUPUESTO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Lic. Cristian Odilio Urizar Montufar</Value>
+    </Setting>
+    <Setting Name="PEDIDO_COMPRAS" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Jose Fernando Laynez Castro</Value>
+    </Setting>
+    <Setting Name="PEDIDO_PROG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="PEDIDO_SUBP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00</Value>
+    </Setting>
+    <Setting Name="PEDIDO_PROY" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00</Value>
+    </Setting>
+    <Setting Name="PEDIDO_ACT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">02</Value>
+    </Setting>
+    <Setting Name="PEDIDO_OBRA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00</Value>
+    </Setting>
+    <Setting Name="PEDIDO_UB_GEO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1401</Value>
+    </Setting>
+    <Setting Name="PEDIDO_FTE_FIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">11</Value>
+    </Setting>
+    <Setting Name="PEDIDO_TELEFONO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">77903333</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
