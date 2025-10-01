@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ED595C9-6BDD-46C5-81F8-3EA842C1BC27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SolicitudDePedidoYRequisicion.My.MyApplication</StartupObject>
+    <RootNamespace>SolicitudDePedidoYRequisicion</RootNamespace>
+    <AssemblyName>SolicitudDePedidoYRequisicion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hospital.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Text" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BC\PedidoYRequisicionBC.vb" />
+    <Compile Include="Common\CommonUtility.vb" />
+    <Compile Include="Common\Entity.vb" />
+    <Compile Include="Common\HospitalConst.vb" />
+    <Compile Include="Common\MessageBoxManager.vb" />
+    <Compile Include="Common\Settings.vb" />
+    <Compile Include="DAC\MySQLDataAccess.vb" />
+    <Compile Include="DAC\PedidoYRequisicionDAC.vb" />
+    <Compile Include="Report\dsRep.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRep.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Preview.Designer.vb">
+      <DependentUpon>Preview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Preview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportCommon.vb" />
+    <Compile Include="Report\Requisicion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Requisicion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\SolicitudDePedido.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolicitudDePedido.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomControl\CustomComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CustomControl\CustomTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditInsumos.Designer.vb">
+      <DependentUpon>EditInsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditInsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditUnidad.Designer.vb">
+      <DependentUpon>EditUnidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditUnidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\InsumosList.Designer.vb">
+      <DependentUpon>InsumosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\InsumosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditServicio.Designer.vb">
+      <DependentUpon>EditServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\EditServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\MaintenanceMenu.Designer.vb">
+      <DependentUpon>MaintenanceMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\MaintenanceMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\UnidadList.Designer.vb">
+      <DependentUpon>UnidadList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\UnidadList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\ServicioList.Designer.vb">
+      <DependentUpon>ServicioList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Mantenimiento\ServicioList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pedido\EditPedido.Designer.vb">
+      <DependentUpon>EditPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pedido\EditPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Pedido\PedidoList.Designer.vb">
+      <DependentUpon>PedidoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Pedido\PedidoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Requisicion\EditRequisicion.Designer.vb">
+      <DependentUpon>EditRequisicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Requisicion\EditRequisicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Requisicion\RequisicionList.Designer.vb">
+      <DependentUpon>RequisicionList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Requisicion\RequisicionList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetComboBox.vb" />
+    <Compile Include="UI\SetComboBoxDGV.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\Preview.resx">
+      <DependentUpon>Preview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Requisicion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Requisicion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SolicitudDePedido.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SolicitudDePedido.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\EditInsumos.resx">
+      <DependentUpon>EditInsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\EditUnidad.resx">
+      <DependentUpon>EditUnidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\InsumosList.resx">
+      <DependentUpon>InsumosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\EditServicio.resx">
+      <DependentUpon>EditServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\MaintenanceMenu.resx">
+      <DependentUpon>MaintenanceMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\UnidadList.resx">
+      <DependentUpon>UnidadList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimiento\ServicioList.resx">
+      <DependentUpon>ServicioList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pedido\EditPedido.resx">
+      <DependentUpon>EditPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Pedido\PedidoList.resx">
+      <DependentUpon>PedidoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Requisicion\EditRequisicion.resx">
+      <DependentUpon>EditRequisicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Requisicion\RequisicionList.resx">
+      <DependentUpon>RequisicionList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Report\dsRep.xsc">
+      <DependentUpon>dsRep.xsd</DependentUpon>
+    </None>
+    <None Include="Report\dsRep.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRep.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\dsRep.xss">
+      <DependentUpon>dsRep.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hospital.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
